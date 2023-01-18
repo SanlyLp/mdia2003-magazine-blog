@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            border: 2px solid pink;
+            margin: 5px;
+            padding: 2px;
+
+        }
+
+        body {
+            margin: auto;
+            width: 1000px;
+        }
+
+        .head,
+        .events,
+        .main,
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .head>div {
+            flex: 1;
+            height: 50px;
+        }
+
+        .head>div:nth-of-type(2) {
+            flex: 2;
+        }
+
+        .menu {
+            height: 25px;
+        }
+
+        .events>div {
+            height: 150px;
+            flex: 1;
+        }
+
+        .main>div {
+            flex: 1;
+        }
+
+        .main>div:nth-of-type(1) {
+            flex: 3;
+        }
+
+        .mainContent>div:nth-of-type(1) {
+            height: 400px;
+
+        }
+
+        .mainContent>div:nth-of-type(2) {
+            height: 40px;
+        }
+
+        .sideBar {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .sideBar>div {
+            height: 265px;
+        }
+
+        .info>div {
+            flex: 1;
+            height: 150px;
+        }
+
+        .footer>div:nth-of-type(1) {
+            height: 40px;
+        }
+
+        .footer>div:nth-of-type(3) {
+            height: 70px;
+        }
+        h2{
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="head">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu"></div>
+    </header>
+    <h4>Top Stories</h4>
+    <div class="events">
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+
+    <main class="main">
+
+        <div>
+            <div class="mainContent">
+                <h2>Hello World</h2>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="mainContent">
+                <h2>Hello World!</h2>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+        <div class="sideBar">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div></div>
+        <div class="info">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+
+    </footer>
+
+</body>
+
+</html>
